@@ -71,14 +71,3 @@ html{scroll-padding-top:90px}
   .quick-paths{padding:0 5%;gap:10px}
   .quick-paths a{padding:16px}
 }
-
-
-/* Category navigation update */
-.category-intro{max-width:1120px;margin:28px auto 14px;padding:0 5%;display:flex;justify-content:center;text-align:center}
-.category-intro>div{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center}
-.category-intro strong{font-size:17px;color:#071b3a}
-.category-intro span{font-size:14px;color:#667386}
-.quick-paths a,.card a,.nav-dropdown-menu a{cursor:pointer}
-.course-detail{position:relative}
-.course-detail:target{outline:3px solid #f5c75d;outline-offset:2px}
-@media(max-width:520px){.category-intro{margin-top:20px}.category-intro>div{display:block}.category-intro span{display:block;margin-top:5px}}
