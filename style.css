@@ -149,3 +149,21 @@ html{scroll-padding-top:90px}
 .course-card:nth-of-type(3) .course-image {
   background-image: url("hospitality.jpg") !important;
 }
+/* Allure course photos */
+.photo.cabin {
+  background-image: url("cabin-crew.jpg") !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo.ground {
+  background-image: url("ground-staff.jpg") !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo.hospitality {
+  background-image: url("hospitality.jpg") !important;
+  background-size: cover;
+  background-position: center;
+}
