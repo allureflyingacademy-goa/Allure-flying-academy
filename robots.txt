@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://allureflyingacademy-goa.github.io/Allure-flying-academy/sitemap.xml
