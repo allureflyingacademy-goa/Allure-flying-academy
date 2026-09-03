@@ -71,3 +71,39 @@ html{scroll-padding-top:90px}
   .quick-paths{padding:0 5%;gap:10px}
   .quick-paths a{padding:16px}
 }
+/* Allure logo upgrade */
+.site-header {
+  min-height: 125px;
+  height: 125px;
+  padding: 8px 4%;
+  border-bottom: 4px solid #f5c75d;
+}
+
+.site-header .brand {
+  width: 290px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+}
+
+.site-header .brand img {
+  width: 100%;
+  height: 115px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    height: 90px;
+    min-height: 90px;
+  }
+
+  .site-header .brand {
+    width: 190px;
+    height: 82px;
+  }
+
+  .site-header .brand img {
+    height: 82px;
+  }
+}
