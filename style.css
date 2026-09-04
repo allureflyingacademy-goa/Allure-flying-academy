@@ -199,3 +199,19 @@ html{scroll-padding-top:90px}
     min-height:620px !important;
   }
 }
+
+
+/* ===== REFERENCE ALIGNMENT FIX =====
+   The reference shows the three quick-path cards BELOW the hero,
+   not overlapping it.
+*/
+.quick-paths{
+  margin:-1px auto 0 !important;
+  position:relative !important;
+  z-index:4 !important;
+}
+@media(max-width:900px){
+  .quick-paths{
+    margin:20px auto 0 !important;
+  }
+}
