@@ -978,3 +978,9 @@ footer a{color:#f5c75d}
 
   .cards{gap:20px}
 }
+/* Remove decorative curves from hero */
+.hero::before,
+.hero-copy::after{
+  display:none !important;
+  content:none !important;
+}
