@@ -266,16 +266,7 @@ button{font-family:inherit}
 /* GOLD CURVES */
 
 .hero::before{
-  content:"";
-  position:absolute;
-  right:-220px;
-  top:-310px;
-  width:590px;
-  height:900px;
-  border:2px solid rgba(201,148,46,.28);
-  border-radius:50%;
-  z-index:8;
-  pointer-events:none;
+  display:none;
 }
 
 .hero-copy::after{
