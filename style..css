@@ -230,3 +230,241 @@ html, body { overflow-x: hidden; }
     min-height: 650px !important;
   }
 }
+/* =========================================================
+   ALLURE HOMEPAGE — NEW HERO DESIGN
+   Left: faded aviation image
+   Right: large Allure logo
+   ========================================================= */
+
+.hero {
+  position: relative !important;
+  display: block !important;
+  min-height: 595px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+/* Aviation image on the LEFT */
+.hero-visual {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 63% !important;
+  height: 100% !important;
+  min-height: 595px !important;
+  z-index: 1 !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6,26,56,.98) 0%,
+      rgba(6,26,56,.82) 38%,
+      rgba(6,26,56,.48) 68%,
+      rgba(6,26,56,.12) 100%
+    ),
+    url("allure-reference-hero.jpg") center center / cover no-repeat !important;
+}
+
+/* Soft fade where image meets the logo side */
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0),
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.92),
+    #fff
+  );
+  z-index: 2;
+}
+
+/* RIGHT WHITE LOGO PANEL */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42%;
+  height: 100%;
+  z-index: 2;
+
+  background-color: #ffffff;
+
+  background-image:
+    url("allure-logo-transparent.png");
+
+  background-repeat: no-repeat;
+
+  background-position: center center;
+
+  background-size: 78% auto;
+
+  box-shadow: -20px 0 55px rgba(255,255,255,.28);
+}
+
+/* GOLD DECORATIVE CURVES on right */
+.hero::before {
+  content: "";
+  position: absolute;
+  right: -180px;
+  top: -160px;
+  width: 520px;
+  height: 900px;
+  border: 2px solid rgba(201,148,46,.28);
+  border-radius: 50%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* LEFT TEXT */
+.hero-copy {
+  position: relative !important;
+  z-index: 4 !important;
+
+  width: 63% !important;
+  min-height: 595px !important;
+
+  padding: 95px 7% 55px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+
+  background: linear-gradient(
+    90deg,
+    rgba(6,26,56,.96) 0%,
+    rgba(6,26,56,.88) 45%,
+    rgba(6,26,56,.48) 78%,
+    rgba(6,26,56,0) 100%
+  ) !important;
+}
+
+/* Keep heading crisp */
+.hero h1 {
+  position: relative;
+  z-index: 5;
+  margin: 20px 0 !important;
+}
+
+.hero p {
+  position: relative;
+  z-index: 5;
+}
+
+.hero .chips,
+.hero .actions,
+.hero .hero-trust {
+  position: relative;
+  z-index: 5;
+}
+
+/* Make the image feel slightly softer */
+.hero-visual {
+  filter: saturate(.88);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: 720px !important;
+    background: #ffffff !important;
+  }
+
+  .hero-visual {
+    width: 100% !important;
+    height: 720px !important;
+    min-height: 720px !important;
+  }
+
+  .hero-copy {
+    width: 100% !important;
+    min-height: 720px !important;
+    padding: 110px 7% 300px !important;
+
+    background: linear-gradient(
+      180deg,
+      rgba(6,26,56,.96) 0%,
+      rgba(6,26,56,.82) 52%,
+      rgba(6,26,56,.45) 68%,
+      rgba(6,26,56,.12) 76%,
+      rgba(255,255,255,.95) 100%
+    ) !important;
+  }
+
+  .hero::after {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 260px;
+
+    background-size: 48% auto;
+    background-position: center 55%;
+    background-color: #fff;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero-visual::before {
+    display: none;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+  .hero {
+    min-height: 700px !important;
+  }
+
+  .hero-visual {
+    height: 700px !important;
+    min-height: 700px !important;
+  }
+
+  .hero-copy {
+    min-height: 700px !important;
+    padding: 95px 6% 235px !important;
+
+    background: linear-gradient(
+      180deg,
+      rgba(6,26,56,.97) 0%,
+      rgba(6,26,56,.88) 48%,
+      rgba(6,26,56,.52) 63%,
+      rgba(255,255,255,.96) 72%,
+      #fff 100%
+    ) !important;
+  }
+
+  .hero h1 {
+    font-size: 44px !important;
+  }
+
+  .hero p {
+    font-size: 16px !important;
+  }
+
+  .chips {
+    gap: 10px !important;
+    font-size: 13px !important;
+  }
+
+  .hero::after {
+    height: 205px;
+    background-size: 68% auto;
+    background-position: center center;
+  }
+}
