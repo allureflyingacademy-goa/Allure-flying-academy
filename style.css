@@ -270,6 +270,8 @@ button{font-family:inherit}
 }
 
 .hero-copy::after{
+  display:none;
+}
   content:"";
   position:absolute;
   right:-70px;
