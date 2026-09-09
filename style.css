@@ -826,15 +826,12 @@ footer a{color:#f5c75d}
     padding:90px 7% 255px;
     justify-content:flex-start;
     background:linear-gradient(
-      180deg,
-      rgba(6,26,56,.98) 0%,
-      rgba(6,26,56,.92) 45%,
-      rgba(6,26,56,.58) 63%,
-      rgba(255,255,255,.94) 82%,
-      #fff 100%
-    );
-  }
-
+    180deg,
+    rgba(6,26,56,.98) 0%,
+    rgba(6,26,56,.94) 60%,
+    rgba(6,26,56,.90) 100%
+  );
+}
   .hero::before,
   .hero-copy::after{
     display:none;
