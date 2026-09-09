@@ -154,7 +154,7 @@ button{font-family:inherit}
   width:100%;
   height:100%;
   z-index:1;
-  background:url("allure-hero-visual.jpg") left center / auto 100% no-repeat;
+  background:url("allure-hero-visual.jpg") 38% center/cover no-repeat;
   animation:heroImage .9s ease both;
 }
 
