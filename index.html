@@ -12,6 +12,151 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== About section only ===== */
+.about-founder{
+  grid-template-columns:minmax(300px, .82fr) minmax(0, 1.5fr);
+  gap:55px;
+  max-width:1250px;
+  align-items:center;
+}
+
+.founder-photo-placeholder{
+  min-height:560px;
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 70% 22%,rgba(245,199,93,.35),transparent 20%),
+    linear-gradient(145deg,#061a38 0%,#0d3157 55%,#061a38 100%);
+  border:1px solid rgba(201,148,46,.35);
+  box-shadow:0 18px 45px rgba(7,27,58,.12);
+  display:grid;
+  place-items:end center;
+  overflow:hidden;
+  position:relative;
+}
+
+.founder-photo-placeholder:before{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  border:2px solid rgba(245,199,93,.55);
+  border-radius:50%;
+  top:22%;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.founder-photo-placeholder>div{
+  position:relative;
+  z-index:1;
+  width:100%;
+  padding:28px 24px;
+  text-align:center;
+  background:linear-gradient(180deg,transparent,rgba(6,26,56,.92));
+  color:#fff;
+}
+
+.founder-photo-placeholder span{
+  display:block;
+  color:#f5c75d;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:2px;
+  margin-bottom:7px;
+}
+
+.founder-photo-placeholder strong{
+  display:block;
+  font:700 27px 'Playfair Display',serif;
+}
+
+.founder-photo-placeholder small{
+  display:block;
+  margin-top:5px;
+  color:#cbd7e6;
+}
+
+.founder-content h2{
+  font-size:48px;
+  margin-bottom:8px;
+}
+
+.founder-content h3{
+  font:700 27px 'Playfair Display',serif;
+  margin:0;
+  color:#071b3a;
+}
+
+.founder-role{
+  margin:5px 0 20px;
+  color:#c9942e!important;
+  font-weight:700;
+}
+
+.founder-quote{
+  margin:0 0 24px;
+  padding:18px 22px;
+  border-left:4px solid #f5c75d;
+  background:#fff6df;
+  border-radius:0 14px 14px 0;
+  color:#071b3a;
+  font:700 19px/1.45 'Playfair Display',serif;
+}
+
+.founder-content>p{
+  line-height:1.72;
+  color:#5d6978;
+  margin:0 0 17px;
+}
+
+.founder-content strong{
+  color:#071b3a;
+}
+
+.founder-cta{
+  margin-top:25px;
+  padding:22px 24px;
+  background:#061a38;
+  color:#fff;
+  border-radius:16px;
+  display:grid;
+  gap:8px;
+}
+
+.founder-cta strong{
+  color:#f5c75d;
+  font-size:17px;
+}
+
+.founder-cta span{
+  color:#dce5f0;
+  line-height:1.5;
+  font-size:14px;
+}
+
+@media(max-width:900px){
+  .about-founder{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+  .founder-photo-placeholder{
+    min-height:420px;
+    max-width:620px;
+    width:100%;
+    margin:auto;
+  }
+  .founder-content h2{font-size:40px}
+}
+
+@media(max-width:520px){
+  .founder-photo-placeholder{min-height:360px}
+  .founder-content h2{font-size:34px}
+  .founder-content h3{font-size:24px}
+}
+</style>
+
 </head>
 
 <body>
@@ -69,7 +214,11 @@
   </div>
 </section>
 
-
+<section class="career-visual-strip" aria-label="Allure career areas">
+  <div><span>✈</span><b>Airline</b><small>Cabin Crew</small></div>
+  <div><span>🛄</span><b>Airport</b><small>Ground Staff</small></div>
+  <div><span>🏨</span><b>Hospitality</b><small>Hotels & Guest Services</small></div>
+</section>
 
 <section id="courses" class="section">
   <div class="section-head">
@@ -117,18 +266,38 @@
   </div>
 </section>
 
-<section id="about" class="section about">
-  <div class="about-art"><div class="ring">A</div></div>
-
-  <div>
-    <span class="eyebrow">ABOUT ALLURE</span>
-    <h2>More Than Training — A Gateway to Your Dreams</h2>
-    <p>Allure is an upcoming institute dedicated to preparing young and ambitious individuals for successful careers in airlines, aviation, hospitality, and the professional world.</p>
-    <p>Our mission is to nurture talent, build confidence, strengthen communication and grooming skills, and develop industry-ready professionals.</p>
-    <div class="tag-row"><span>Aviation</span><span>Hospitality</span><span>Professional Training</span></div>
+<section id="about" class="section about about-founder">
+  <div class="founder-photo-placeholder" aria-label="Founder photo placeholder">
+    <div>
+      <span>FOUNDER</span>
+      <strong>Aafreen Shaikh</strong>
+      <small>Photo coming soon</small>
+    </div>
   </div>
 
-  <blockquote>“Where Ambition Meets Opportunity.”</blockquote>
+  <div class="founder-content">
+    <span class="eyebrow">ABOUT ALLURE</span>
+    <h2>Meet the Founder</h2>
+    <h3>Aafreen Shaikh</h3>
+    <p class="founder-role">Founder &amp; Director, Allure Flying Academy</p>
+
+    <blockquote class="founder-quote">“The right guidance can turn ambition into a successful career.”</blockquote>
+
+    <p>Allure Flying Academy was founded with a simple belief — <strong>the right guidance can turn ambition into a successful career.</strong></p>
+
+    <p>With more than <strong>10 years of professional experience in customer service</strong>, I have learned that exceptional service is about much more than simply doing a job. It is about communication, confidence, empathy, presentation, professionalism, and the ability to make people feel valued.</p>
+
+    <p>This experience became the inspiration behind <strong>Allure Flying Academy</strong> — an academy created to help aspiring professionals build the skills, confidence, and personality they need to step into the world of <strong>aviation, hospitality, and customer service</strong>.</p>
+
+    <p>At Allure, we don't focus only on <strong>what you need to learn</strong>. We focus on <strong>who you need to become</strong> — confident, well-groomed, articulate, professional, and ready to face the industry with confidence.</p>
+
+    <p>Every student who walks through our doors brings a unique dream and a different story. I believe in recognizing that individuality, nurturing their strengths, and helping them discover their potential.</p>
+
+    <div class="founder-cta">
+      <strong>Your dream career starts with one decision — the decision to begin.</strong>
+      <span>Join Allure Flying Academy and take the first step towards becoming the professional you aspire to be.</span>
+    </div>
+  </div>
 </section>
 
 <section id="career" class="dark-section career">
